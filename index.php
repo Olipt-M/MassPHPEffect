@@ -7,9 +7,23 @@
 ?>
 
 <main>
-  <h1>Choix du personnage</h1>
+  <h1>Select your character</h1>
   <section class="character-list">
-    
+    <?php foreach($characters as $character) { ?>
+      <a class="character-selecter" href="fight.php?player=<?= $character->id ?>&opponent=<?= rand(1, count($characters)) ?>">
+        <img src="img/characters/<?= $character->id ?>.webp" alt="<?= $character->name ?>">
+        <div class="character-details">
+          <img src="
+            <?php if ($character->type == "moissonneur") { ?>
+              img/moissonneur.webp" alt=" <?= $character->type ?>
+            <?php } else { ?>
+              img/normandy.jpg" alt=" <?= $character->type ?>
+            <?php } ?>
+          ">
+          <p><?= $character->puissance ?></p>
+        </div>
+      </a>
+    <?php } ?>
   </section>
 </main>
 
