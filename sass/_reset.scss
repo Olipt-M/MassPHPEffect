@@ -15,6 +15,6 @@ img {
     width: 100%;
 }
 
-h1, p, ul {
+h1, h2, p, ul {
     @include no-margin;
 }
