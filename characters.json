@@ -1,114 +1,122 @@
 [
     {
         "id": 1,
-        "name": "Dark Maul",
-        "puissance": 76,
+        "name": "Furie",
+        "puissance": 72,
         "attacks" : [
             {
-                "name": "Sabre laser",
-                "damage": 25
-            }
-        ],
-        "type": "sith"
-    },
-    {
-        "id": 3,
-        "name": "Dark Vador",
-        "puissance": 94,
-        "attacks" : [
-            {
-                "name": "Sabre laser",
-                "damage": 25
+                "name": "Projection",
+                "damage": 30
             },
             {
-                "name": "Etranglement",
+                "name": "Champ d'Annihilation",
                 "damage": 10
             }
         ],
-        "type": "sith"
+        "type": "moissonneur"
+    },
+    {
+        "id": 2,
+        "name": "Cerberus",
+        "puissance": 86,
+        "attacks" : [
+            {
+                "name": "Impact",
+                "damage": 25
+            },
+            {
+                "name": "Frapper",
+                "damage": 15
+            }
+        ],
+        "type": "moissonneur"
+    },
+    {
+        "id": 3,
+        "name": "Geth",
+        "puissance": 85,
+        "attacks" : [
+            {
+                "name": "Impulsion assiégeante",
+                "damage": 35
+            },
+            {
+                "name": "Tourelle geth",
+                "damage": 5
+            }
+        ],
+        "type": "moissonneur"
     },
     {
         "id": 4,
-        "name": "Dark Sidious",
-        "puissance": 96,
+        "name": "Ombre",
+        "puissance": 62,
         "attacks" : [
             {
-                "name": "Sabre laser",
-                "damage": 25
-            },
-            {
-                "name": "Eclair de Force",
-                "damage": 50
+                "name": "Frappe de l'ombre",
+                "damage": 40
             }
         ],
-        "type": "sith"
+        "type": "moissonneur"
     },
     {
         "id": 5,
-        "name": "Kilo Ren",
-        "puissance": 82,
+        "name": "Asari",
+        "puissance": 75,
         "attacks" : [
             {
-                "name": "Sabre laser",
+                "name": "Charge biotique",
+                "damage": 15
+            },
+            {
+                "name": "Grenade de lévitation",
                 "damage": 25
             }
         ],
-        "type": "sith"
+        "type": "normandy"
     },
     {
         "id": 6,
-        "name": "Obi Wan Kenobi",
-        "puissance": 88,
-        "attacks" : [
-            {
-                "name": "Sabre laser",
-                "damage": 25
-            }
-        ],
-        "type": "jedi"
-    },
-    {
-        "id": 7,
-        "name": "Yoda",
+        "name": "Krogan",
         "puissance": 91,
         "attacks" : [
             {
-                "name": "Sabre laser",
-                "damage": 25
+                "name": "Charge krogane",
+                "damage": 20
             }
         ],
-        "type": "jedi"
+        "type": "normandy"
+    },
+    {
+        "id": 7,
+        "name": "Galarien",
+        "puissance": 65,
+        "attacks": [
+            {
+                "name": "Drain d'énergie",
+                "damage": 5
+            },
+            {
+                "name": "Incinération",
+                "damage": 35
+            }
+        ],
+        "type": "normandy"
     },
     {
         "id": 8,
-        "name": "Rey",
-        "puissance": 72,
+        "name": "Quarien",
+        "puissance": 86,
         "attacks": [
             {
-                "name": "Sabre laser",
-                "damage": 25
+                "name": "Incinération",
+                "damage": 20
             },
             {
-                "name": "Blaster",
-                "damage": 5
+                "name": "Grenade à Arc",
+                "damage": 20
             }
         ],
-        "type": "jedi"
-    },
-    {
-        "id": 9,
-        "name": "Luke Skywalker",
-        "puissance": 95,
-        "attacks": [
-            {
-                "name": "Sabre laser",
-                "damage": 25
-            },
-            {
-                "name": "Blaster",
-                "damage": 5
-            }
-        ],
-        "type": "jedi"
+        "type": "normandy"
     }
 ]

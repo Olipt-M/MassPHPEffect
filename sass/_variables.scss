@@ -1,0 +1,15 @@
+// Colors
+$color-primary: #ffffff;
+// $color-secondary: #c5c5c5;
+
+// Breakpoints
+$sm-breakpoint: 576px;
+$md-breakpoint: 768px;
+$lg-breakpoint: 992px;
+$xl-breakpoint: 1200px;
+
+// Fonts
+@font-face {
+  font-family: me123;
+  src: url("../fonts/Mass-Effect-Font/me123.ttf");
+}

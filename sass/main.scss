@@ -1,0 +1,33 @@
+@import "variables";
+@import "mixins";
+@import "reset";
+
+body {
+    font-family: me123;
+    background-image: url("../img/citadelle.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    color: $color-primary;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: -1;
+}
+
+header p {
+    text-align: center;
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.5rem;
+}

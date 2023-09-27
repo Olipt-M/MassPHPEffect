@@ -1,0 +1,134 @@
+N7-Furie
+
+Aptitudes :
+
+    Barrière 500/500
+    Explosion biotique
+    Acrobaties
+
+Pouvoirs :
+
+    ME3 projection Projection
+    ME3 Annihilation Field Champ d'Annihilation
+    ME3 Dark Channel Canalisation Sombre
+    ME3 entrainementdelalliance N7 Furie
+    ME3 athlete Athlète
+
+--------------------------------------------------
+Ex-Cerberus
+
+Aptitudes :
+
+    Barrière 500/500
+    Roulades en combat
+    Bâton électrique
+    Frappe de Cerberus
+
+Pouvoirs :
+
+    ME3 singularite Singularité
+    ME3 Lash Impact
+    ME3 Smash Frapper
+    ME3 entrainementdelalliance Entraînement Phénix
+    ME3 athlete Athlète
+
+--------------------------------------------------
+Mastodonte geth
+
+Bouclier: 2000 / Santé: 1000 
+
+ME3 Impulsion assiégeante Impulsion assiégeante 	
+ME3 Bouclier anti-sort Bouclier anti-sort 	
+ME3 Tourelle geth Tourelle geth 	
+ME3 Pouvoir Mastodonte geth 	
+ME3 Athlète Plateforme renforcée 	
+	
+--------------------------------------------------
+Soldat krogan
+
+Aptitudes :
+
+    Boucliers 1000/1000
+    Charge krogane
+    coup de boulet krogan
+    Résistance / Corps à corps
+    Mobilité réduite
+
+Pouvoirs :
+
+    Carnage
+    Fortification
+    Grenade inferno
+
+--------------------------------------------------
+Ombre
+
+Aptitudes :
+
+    Boucliers 500/500
+    Acrobatie
+    Arts martiaux
+    Lame mononucléaire
+
+Pouvoirs :
+
+    ME3 camouflagetactique Camouflage tactique
+    ME3 Shadow Strike Frappe de l'ombre
+    ME3 Electric Slash Taillade électrique
+    ME3 Sword Mastery
+    ME3 athlete Athlète
+
+--------------------------------------------------
+Porte-etendart asari
+
+Aptitudes :
+
+    Boucliers 500/500
+    Ruée biotique
+    Explosion biotique lourde
+
+Pouvoirs :
+
+    ME3 chargebiotique Charge biotique
+    ME3 stase Stase
+    ME3 grenadedelevitation Grenade de lévitation
+    ME3 probatriceasari Probatrice asari
+    ME3 athlete Athlète
+
+--------------------------------------------------
+Ingénieur galarien
+
+Aptitudes :
+
+    Boucliers 600/600
+    Sauts en combat
+    OmniLame incendiaire
+
+Pouvoirs :
+
+    ME3 draindenergie Drain d'énergie
+    ME3 leurre Leurre
+    ME3 incineration Incinération
+    ME3 agentgalarien Agent galarien
+    ME3 athlete Athlète
+
+--------------------------------------------------
+Ingénieur quarien
+
+Aptitudes :
+
+    Boucliers 600/500
+    Sauts en combat
+    OmniLame incendiaire
+
+Pouvoirs :
+
+    ME3 incineration Incinération
+    ME3 Tactical Scan Scan Tactique
+    ME3 Arc Grenade Grenade à Arc
+    ME3 agentgalarien Défenseur quarien
+    ME3 athlete Athlète
+
+
+
+
