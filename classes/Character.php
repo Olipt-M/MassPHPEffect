@@ -6,6 +6,7 @@
     private int $puissance;
     private array $attacks;
     private string $type;
+    private int $health = 100;
 
     public function __construct(int $id, string $name, int $puissance, array $attacks, string $type)
     {
@@ -41,14 +42,14 @@
       return $this->attacks;
     }
 
-    // public function getAttackName() : string
-    // {
-    //   return $this->name;
-    // }
+    public function getHealth() : int
+    {
+      return $this->health;
+    }
 
-    // public function getAtatckDamage() : int
-    // {
-    //   return $this->name;
-    // }
+    public function selectPlayerAttack(int $index) : string
+    {
+      return $this->attacks[$index];
+    }
   }
 ?>

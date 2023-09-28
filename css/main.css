@@ -66,6 +66,7 @@ header p {
 h1 {
   text-align: center;
   font-size: 3rem;
+  text-transform: uppercase;
 }
 
 .character-list {
@@ -163,6 +164,27 @@ h1 {
 .fight-comments h2 {
   font-size: 3rem;
   text-align: center;
+  text-transform: uppercase;
+}
+
+.attacks-container {
+  margin-top: 5rem;
+  display: flex;
+  align-items: center;
+}
+.attacks-container h2 {
+  font-size: 2rem;
+}
+.attacks-container li {
+  display: inline-block;
+  margin-left: 2rem;
+  background: #ffffff;
+  border-radius: 2rem;
+  padding: 1rem;
+}
+.attacks-container li a {
+  color: #C80000;
+  text-decoration: none;
 }
 
 /*# sourceMappingURL=main.css.map */
