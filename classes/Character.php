@@ -47,9 +47,9 @@
       return $this->health;
     }
 
-    public function selectPlayerAttack(int $index) : string
+    public function setHealth(int $damage) : int
     {
-      return $this->attacks[$index];
+      return $this->health -= $damage;
     }
   }
 ?>

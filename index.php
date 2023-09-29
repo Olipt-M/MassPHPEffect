@@ -5,12 +5,11 @@
   include("templates/header.php");
 ?>
 
-<!-- ATTENTION : remettre les id comm ils étainent, pour le gérer ensuite dans mon count / ids = 1, 3,... Il n'y a pas de 2 -->
 <main>
-  <h1>Select your character</h1>
+  <h1>Choissez votre combattant</h1>
   <section class="character-list">
     <?php foreach($characters as $character) { ?>
-      <a class="character-selecter" href="fight.php?player=<?= $character->id ?>&opponent=<?= rand(1, count($characters)) ?>">
+      <a class="character-selecter" href="fight.php?player=<?= $character->id ?>">
         <img src="img/characters/<?= $character->id ?>.webp" alt="<?= $character->name ?>">
 
         <div class="character-details">

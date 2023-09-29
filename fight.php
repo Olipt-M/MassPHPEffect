@@ -1,13 +1,16 @@
 <?php
   require ("classes/Character.php");
-  $data = array("headerTitle" => "Mass PHP Effect - Fight !");
+  $data = array("headerTitle" => "Mass PHP Effect - Combat !");
 
   session_start();
 
   $characters = json_decode(file_get_contents("characters.json"));
   // echo '<pre style="color: white;">', var_dump($characters), '<pre>';
   
-  if (isset($_GET["player"]) && isset($_GET["opponent"])) {
+  if (isset($_GET["player"])) {
+    // First round of combat
+    $displayComments = false;
+
     $idPlayer = $_GET["player"];
     foreach ($characters as $character) {
       if ($character->id == $idPlayer) {
@@ -15,7 +18,7 @@
       }
     }
 
-    $idOpponent = $_GET["opponent"];
+    $idOpponent = $characters[rand(0, count($characters) - 1)]->id;
     foreach ($characters as $character) {
       if ($character->id == $idOpponent) {
         $opponent = new Character($character->id, $character->name, $character->puissance, $character->attacks, $character->type);
@@ -28,10 +31,38 @@
     // echo '<pre style="color: white;">', var_dump($_SESSION["fighters"]), '<pre>';
   }
   else {
+    // Rest of the rounds of combat
     if (isset($_SESSION["fighters"])) {
+      $displayComments = true;
+      
       // echo '<pre style="color: white;">', var_dump($_SESSION["fighters"]), '<pre>';
       $player = $_SESSION["fighters"]["player"];
       $opponent = $_SESSION["fighters"]["opponent"];
+
+      // Inflicting attacks and damages
+      $playerDealtAttackIndex = $_GET["attack"];
+      $playerDealtAttackName = $player->getAttacksList()[$playerDealtAttackIndex]->name;
+      $playerDealtAttackDamage = round($player->getAttacksList()[$playerDealtAttackIndex]->damage * $player->getPuissance() / 100);
+      $opponent->setHealth($playerDealtAttackDamage);
+
+      if ($opponent->getHealth() <= 0) {
+        $playerWins = true;
+        $_SESSION["endOfFight"] = ["playerWins" => $playerWins];
+        header("Location: fightEnd.php");
+      }
+
+      $opponentDealtAttackIndex = rand(0, count($opponent->getAttacksList()) - 1);
+      $opponentDealtAttackName = $opponent->getAttacksList()[$opponentDealtAttackIndex]->name;
+      $opponentDealtAttackDamage = round($opponent->getAttacksList()[$opponentDealtAttackIndex]->damage * $opponent->getPuissance() / 100);
+
+      $player->setHealth($opponentDealtAttackDamage);
+      if ($player->getHealth() <= 0) {
+        $playerWins = false;
+        $_SESSION["endOfFight"] = ["playerWins" => $playerWins];
+        header("Location: fightEnd.php");
+      }
+
+      $_SESSION["fighters"] = ["player" => $player, "opponent" => $opponent];
     }
   }
 
@@ -39,7 +70,7 @@
 ?>
 
 <main>
-  <h1>Fight !</h1>
+  <h1>Le combat a commencé !</h1>
   <section class="fight-container">
     <div class="fighter-container">
       <img src="img/characters/<?= $player->getID() ?>.webp" alt="<?= $player->getName() ?>">
@@ -60,6 +91,12 @@
     <div class="fight-comments">
       <h2>vs</h2>
 
+      <?php if ($displayComments) { ?>
+        <p><?= $player->getName() ?> réalise l'attaque <?= $playerDealtAttackName ?>.</p>
+        <p><?= $opponent->getName() ?> reçoit <?= $playerDealtAttackDamage ?> dégâts.</p>
+        <p><?= $opponent->getName() ?> réalise l'attaque <?= $opponentDealtAttackName ?>.</p>
+        <p><?= $player->getName() ?> reçoit <?= $opponentDealtAttackDamage ?> dégâts.</p>
+      <?php } ?>
     </div>
 
     <div class="fighter-container">
@@ -74,13 +111,13 @@
           <?php } ?>
         ">
         <p><?= $opponent->getPuissance() ?></p>
-        <progress max="100" value="<?= $player->getHealth(); ?>"></progress>
+        <progress max="100" value="<?= $opponent->getHealth(); ?>"></progress>
       </div>
     </div>
   </section>
 
   <section class="attacks-container">
-    <h2>Attacks :</h2>
+    <h2>Attaques :</h2>
     <ul id="player-attacks">
       <?php
       $attacks = $player->getAttacksList();

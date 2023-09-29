@@ -16,7 +16,7 @@
         "type": "moissonneur"
     },
     {
-        "id": 2,
+        "id": 3,
         "name": "Cerberus",
         "puissance": 86,
         "attacks" : [
@@ -32,7 +32,7 @@
         "type": "moissonneur"
     },
     {
-        "id": 3,
+        "id": 4,
         "name": "Geth",
         "puissance": 85,
         "attacks" : [
@@ -48,7 +48,7 @@
         "type": "moissonneur"
     },
     {
-        "id": 4,
+        "id": 5,
         "name": "Ombre",
         "puissance": 62,
         "attacks" : [
@@ -60,7 +60,7 @@
         "type": "moissonneur"
     },
     {
-        "id": 5,
+        "id": 6,
         "name": "Asari",
         "puissance": 75,
         "attacks" : [
@@ -76,7 +76,7 @@
         "type": "normandy"
     },
     {
-        "id": 6,
+        "id": 7,
         "name": "Krogan",
         "puissance": 91,
         "attacks" : [
@@ -88,7 +88,7 @@
         "type": "normandy"
     },
     {
-        "id": 7,
+        "id": 8,
         "name": "Galarien",
         "puissance": 65,
         "attacks": [
@@ -104,7 +104,7 @@
         "type": "normandy"
     },
     {
-        "id": 8,
+        "id": 9,
         "name": "Quarien",
         "puissance": 86,
         "attacks": [
