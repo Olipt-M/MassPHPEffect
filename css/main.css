@@ -186,9 +186,6 @@ h1 {
 .attacks-container li {
   display: inline-block;
   margin-left: 2rem;
-  background: #ffffff;
-  border-radius: 2rem;
-  padding: 1rem;
 }
 .attacks-container li:hover {
   box-shadow: 0px 0px 30px 10px rgba(230, 230, 230, 0.2);
@@ -196,6 +193,9 @@ h1 {
 .attacks-container li a {
   color: #C80000;
   text-decoration: none;
+  background: #ffffff;
+  border-radius: 2rem;
+  padding: 1rem;
 }
 
 .game-end-container {

@@ -49,12 +49,16 @@
     },
     {
         "id": 5,
-        "name": "Ombre",
-        "puissance": 62,
+        "name": "Vortcha",
+        "puissance": 70,
         "attacks" : [
             {
-                "name": "Frappe de l'ombre",
-                "damage": 40
+                "name": "Pyromane",
+                "damage": 30
+            },
+            {
+                "name": "Bombe à fragmentation",
+                "damage": 10
             }
         ],
         "type": "moissonneur"
@@ -82,7 +86,7 @@
         "attacks" : [
             {
                 "name": "Charge krogane",
-                "damage": 20
+                "damage": 25
             }
         ],
         "type": "normandy"
@@ -90,31 +94,31 @@
     {
         "id": 8,
         "name": "Galarien",
-        "puissance": 65,
+        "puissance": 69,
         "attacks": [
             {
                 "name": "Drain d'énergie",
-                "damage": 5
+                "damage": 10
             },
             {
                 "name": "Incinération",
-                "damage": 35
+                "damage": 30
             }
         ],
         "type": "normandy"
     },
     {
         "id": 9,
-        "name": "Quarien",
-        "puissance": 86,
-        "attacks": [
+        "name": "Turien",
+        "puissance": 73,
+        "attacks" : [
             {
-                "name": "Incinération",
-                "damage": 20
+                "name": "Tir percussif",
+                "damage": 30
             },
             {
-                "name": "Grenade à Arc",
-                "damage": 20
+                "name": "Mine de proximité",
+                "damage": 10
             }
         ],
         "type": "normandy"
