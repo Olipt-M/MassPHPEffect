@@ -44,10 +44,11 @@ header {
 h1 {
     text-align: center;
     font-size: 3rem;
+    margin-block: 3rem;
 }
 
 .character-list {
-    margin-top: 5rem;
+    margin-top: 10rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -85,7 +86,7 @@ h1 {
 }
 
 .fight-container {
-    margin-top: 5rem;
+    margin-top: 10rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -143,7 +144,7 @@ h1 {
 }
 
 .attacks-container {
-    margin-top: 5rem;
+    margin-top: 10rem;
     display: flex;
     align-items: center;
 
